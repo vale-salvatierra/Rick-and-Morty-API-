@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Rick and Morty</title>
+</head>
+
+<body class="bg-black">
+    <div class=" px-5">
+        <header class=" justify-content-center align-content-center d-flex" >
+            <img class="img-fluid" src="/assets/58f37720a4fa116215a9240f.png" alt="Rick and Morty Logo">
+        </header>
+        <div class="containerSelects row py-5">
+            <select class=" bg-black text-success form-select mx-3 col " aria-label="Default select example"name="gender" id="genderSelect">
+            
+                <option value="" selected>Sort by: Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Gemderless">Genderless</option>
+                <option value="Unknown">Unknown</option>
+            </select>
+            <select class=" bg-black text-success col form-select mx-3" name="species" id="speciesSelect">
+                <option value="" selected>Sort by: Species</option>
+                <option value="Human">Human</option>
+                <option value="Alien">Alien</option>
+                <option value="Unknown">Unknown</option>
+            </select>
+            <select class=" bg-black text-success col  form-select mx-3" name="status" id="statusSelect">
+                <option value="" selected>Sort by: Status</option>
+                <option value="Dead">Dead</option>
+                <option value="Alive">Alive</option>
+                <option value="Unknown">Unknown</option>
+            </select>
+        </div>
+        <div class="row row-cols-md-4" id="contenedorCards">
+
+        </div>
+    </div>
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content bg-black text-success fw-bold">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Episodes</h1>
+            <button type="button" class=" btn btn-close btn-success fw-bolder" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <ul class="modal-list">
+
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script async src="app.js"></script>
+</body>
+    
+</html>
+
